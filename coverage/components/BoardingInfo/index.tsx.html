@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/FlightInfo/index.tsx</title>
+    <title>Code coverage report for components/BoardingInfo/index.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/FlightInfo</a> index.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/BoardingInfo</a> index.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>72/72</span>
+                <span class='fraction'>54/54</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>72/72</span>
+                <span class='fraction'>54/54</span>
             </div>
         
             
@@ -117,25 +117,7 @@
 <a name='L52'></a><a href='#L52'>52</a>
 <a name='L53'></a><a href='#L53'>53</a>
 <a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -189,96 +171,60 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export type FlightInfoProps = {
-  flightNumber: string;
-  flightDate: string;
-  departure: {
-    city: string;
-    country: string;
-    airport: string;
-    time: string;
-  };
-  arrival: {
-    city: string;
-    country: string;
-    time: string;
-    airport: string;
-    daysAfter: number;
-  };
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import qrCode from '../../assets/QRCode.svg';
+&nbsp;
+export type BoardingInfoProps = {
+  time: string;
+  terminal: number;
+  gate: number;
+  boardingGroup: number;
+  gateClosesTime: string;
 };
 &nbsp;
-const FlightInfo = ({
-  arrival,
-  departure,
-  flightDate,
-  flightNumber,
-}: FlightInfoProps) =&gt; {
-  console.log(arrival);
-  console.log(departure);
-  console.log(flightDate);
-  console.log(flightNumber);
-&nbsp;
+const BoardingInfo = ({
+  time,
+  terminal,
+  gate,
+  boardingGroup,
+  gateClosesTime,
+}: BoardingInfoProps) =&gt; {
   return (
-    &lt;div className="min-w-[327px] max-w-full rounded-3xl bg-white py-6 px-8"&gt;
-      &lt;div className="mb-6 flex items-center justify-between"&gt;
-        &lt;div&gt;
-          &lt;span className="text-sm font-thin text-black/60"&gt;Voo&lt;/span&gt;
-          &lt;p className="font-medium text-black/90"&gt;{flightNumber}&lt;/p&gt;
+    &lt;div className='min-w-[327px] max-w-full rounded-3xl bg-white py-6 px-8'&gt;
+      &lt;div className='mb-6 flex justify-between'&gt;
+        &lt;div className='flex flex-col'&gt;
+          &lt;div&gt;
+            &lt;span className='text-sm text-black/60'&gt;Embarque&lt;/span&gt;
+            &lt;p className='font-medium text-black/90'&gt;{time}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;span className=' text-sm text-black/60'&gt;Terminal&lt;/span&gt;
+            &lt;p className='font-medium text-black/90'&gt;{terminal}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;span className=' text-sm text-black/60'&gt;Portão&lt;/span&gt;
+            &lt;p className='font-medium text-black/90'&gt;{gate}&lt;/p&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div className="text-right"&gt;
-          &lt;span className=" text-sm font-thin text-black/60"&gt;Data&lt;/span&gt;
-          &lt;p className="font-medium text-black/90"&gt;{flightDate}&lt;/p&gt;
+        &lt;div&gt;
+          &lt;div className='w-[160px] flex justify-center mb-2'&gt;
+            &lt;img className='block max-w-[140px]' src={qrCode} alt='Código QR' /&gt;
+          &lt;/div&gt;
+          &lt;p className='text-black/65 text-sm'&gt;
+            Grupo de embarque: {boardingGroup}
+          &lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-&nbsp;
-      &lt;div className="flex items-center justify-between"&gt;
-        &lt;div&gt;
-          &lt;span className="text-sm font-thin text-black/60"&gt;
-            {departure.city}, {departure.country}
-          &lt;/span&gt;
-          &lt;p className="text-4xl font-medium text-black/90"&gt;
-            {departure.airport}
-          &lt;/p&gt;
-          &lt;span className="text-base font-thin text-black/80"&gt;
-            {departure.time}
-          &lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div className="text-right"&gt;
-          &lt;span className="text-sm font-thin text-black/60"&gt;
-            {arrival.city}, {arrival.country}
-          &lt;/span&gt;
-          &lt;p className="text-4xl font-medium text-black/90"&gt;
-            {arrival.airport}
-          &lt;/p&gt;
-          &lt;span className=" text-base font-thin text-black/80"&gt;
-            {arrival.time}
-            &lt;sup&gt;{`+${arrival.daysAfter}`}&lt;/sup&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          &lt;span className='font-medium'&gt;Atenção:&lt;/span&gt; o portão fecha às{' '}
+          {gateClosesTime}
+        &lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   );
 };
 &nbsp;
-export default FlightInfo;
+export default BoardingInfo;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -286,7 +232,7 @@ export default FlightInfo;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-13T18:46:21.278Z
+                at 2023-02-13T21:57:45.286Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
