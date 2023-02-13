@@ -2,7 +2,7 @@
 
 This is a [Vite](https://vitejs.dev/) simple application using react to show Boarding pass informations .
 
-[![ci](https://vercelbadge.vercel.app/api/matheusgrundler/boardingPass)]
+![ci](https://vercelbadge.vercel.app/api/matheusgrundler/boardingPass)
 
 ## What is inside?
 
@@ -27,13 +27,13 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:517,](http://localhost:5173) with your browser to see the result.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
 You can start editing the page by modifying `src/app.js`. The page auto-updates as you edit the file.
 
 ## Commands
 
-- `dev`: runs your application on `localhost:3000`
+- `dev`: runs your application on `localhost:5173`
 - `build`: creates the production build version
 - `test`: runs the tests
 
