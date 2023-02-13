@@ -25,7 +25,8 @@
         "@typescript-eslint",
         "unused-imports",
         "tailwindcss",
-        "simple-import-sort"
+        "simple-import-sort",
+        "plugin:prettier/recommended"
       ],
       "extends": [
         "plugin:tailwindcss/recommended",

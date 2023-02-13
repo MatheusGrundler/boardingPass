@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1676313981282" clover="3.2.0">
-  <project timestamp="1676313981282" name="All files">
-    <metrics statements="92" coveredstatements="92" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="96" coveredelements="96" complexity="0" loc="92" ncloc="92" packages="2" files="2" classes="2"/>
-    <package name="components.FlightInfo">
-      <metrics statements="72" coveredstatements="72" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.tsx" path="/home/grundler/Development/boraCodar/boardingPass/src/components/FlightInfo/index.tsx">
-        <metrics statements="72" coveredstatements="72" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+<coverage generated="1676325465290" clover="3.2.0">
+  <project timestamp="1676325465290" name="All files">
+    <metrics statements="74" coveredstatements="74" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="78" coveredelements="78" complexity="0" loc="74" ncloc="74" packages="2" files="2" classes="2"/>
+    <package name="components.BoardingInfo">
+      <metrics statements="54" coveredstatements="54" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.tsx" path="/home/grundler/Development/boraCodar/boardingPass/src/components/BoardingInfo/index.tsx">
+        <metrics statements="54" coveredstatements="54" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -60,24 +60,6 @@
         <line num="52" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="56" count="1" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
-        <line num="64" count="1" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
-        <line num="66" count="1" type="stmt"/>
-        <line num="67" count="1" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="70" count="1" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
-        <line num="72" count="1" type="stmt"/>
       </file>
     </package>
     <package name="utils">
