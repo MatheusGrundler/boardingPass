@@ -1,8 +1,10 @@
-import type { FlightInfoProps } from '../FlightInfo';
-import FlightInfo from '../FlightInfo';
+
+import FlightInfo,{FlightInfoProps} from '../FlightInfo';
+import PassagerInfo,{PassagerInfoProps} from '../PassagertInfo';
 
 type Boardingpass = {
   flightInfo: FlightInfoProps;
+  passagerInfo: PassagerInfoProps
 };
 
 const data: Boardingpass = {
@@ -23,11 +25,15 @@ const data: Boardingpass = {
       daysAfter: 1,
     },
   },
+  passagerInfo:{
+    name:'Rodrigo Terron',
+    seat:'28A'
+  }
 };
 
-const Card = () => {
+const Ticket = () => {
   return (
-    <section>
+    <section className="drop-shadow-2xl shadow-black/25">
       <div className="mb-5">
         <h1 className="text-center text-xl font-medium text-white">
           Cartão de embarque
@@ -35,8 +41,11 @@ const Card = () => {
       </div>
 
       <FlightInfo {...data.flightInfo} />
+      <PassagerInfo{...data.passagerInfo}/>
+
+
     </section>
   );
 };
 
-export default Card;
+export default Ticket;
